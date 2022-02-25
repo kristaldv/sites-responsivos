@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e1fae4bd76.js" crossorigin="anonymous"></script>
+    <title>UNES - universidade</title>
+</head>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top ">
+            <div class="container" id="container">
+                <span class="navbar-brand"><img class="" src="imagens/logo.png" alt="unes"></span>
+                
+                <!--Menu hamburguer-->
+                <button class="navbar-toggler" data-toggle="collapse"
+                data-target="#target">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+               
+                <!--Navegação-->
+                <div class="collapse navbar-collapse" id="target">
+                  <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <input class="btn btn-success btn-sm" type="button" value="Area do aluno" onclick="window.location.href = 'login.html'">
+                </div>
+            </div>
+          </nav>
+    </header>
+    <article class="container">
+        
+        <div class="text-center ">
+            <img class="img-fluid img-capa" src="imagens/capa.png" alt="">
+            
+        </div>
+        <div class="inscriçao mt-2 d-none d-md-block" >
+            <h1 class="ml-3 display-3">Escolha seu curso e matricule-se</h1>
+            <div class="row justify-content-center " >
+                <select name="cursos" id="form" class="form-control ">
+                    <option selected >Graduação</option>
+                    <option >Pós-Graduação</option>
+                </select>
+                <input class="col-4 ml-2 form-control" type="search" placeholder="Digite aqui seu curso"">
+                <input class="col-2 ml-2 btn btn-dark" type="button" value="Inscreva-se">
+                
+            </div>
+             
+        </div >
+        
+        <div class="row d-flex mt-2" >
+            <div class="col-md-7 d-flex docente">
+                <div class="align-self-center">
+                <p class="display-4">Contamos com uma equipe de professores renomados</p>
+                <p>Com a UNES, você aprenderá com os melhores professores que te ensinarão de maneira prática e rápida, através de metodologias atívas.</p>
+                <p>Saiba mais sobre o corpo docente.</p>
+                <input type="button" class="btn btn-success" value="Saiba mais">
+                </div>
+            </div>
+                <div class="col-md-5">
+                  <img class="img-fluid " src="imagens/img2.jpg" alt="" id="professor">
+                </div>    
+        </div>  
+        
+        <section id="conteudo">
+          <div class=" row mt-2" >
+              <div class="col-md-4 d-flex">
+                <div class="align-self-center">
+                  <p>Contamos com laboratórios com alta tecnologia para a realização das atividades</p>
+                </div>
+              </div>
+              <div class="col-md-8 d-flex">
+                <div class="col-md-6">
+                  <img src="imagens/pexels-pixabay-267507.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <img src="imagens/pexels-yaroslav-shuraev-8515125.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+          
+            </div>
+            <div class="row mt-2" >
+              <div class="col-md-4 d-flex">
+                <div class="align-self-center">
+                  <p>Sala de aula com assentos confortáveis e climatizada.</p>
+                </div>
+              </div>
+              <div class="col-md-8 d-flex">
+                <div class=" col-md-6">
+                  <img src="imagens/pexels-pixabay-356065.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <img src="imagens/pexels-pixabay-159213.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="row mt-2" >
+              <div class="col-md-4 d-flex">
+                <div class="align-self-center">
+                  <p>Nosso campus contem diversas áreas socias que possibilita o contato com a natureza.</p>
+                </div>
+              </div>
+              <div class="col-md-8 d-flex">
+                <div class=" col-md-6">
+                  <img src="imagens/area social.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <img src="imagens/campus.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+        </section>
+        
+    </article>
+
+    <footer>
+      <div class="container">
+        <div class="row d-flex">
+            <div class="col-md-3">
+                <img src="imagens/logo.png" alt="" width="150px"> <br>
+                <p> Avenida Central, 452, Pinheiros - CEP: 40000.222, Salvador-BA</p>
+            </div>
+            <div class="col-md-3 ">
+              <p>UNES</p>
+              <ul >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                
+              </ul>
+            </div>
+            <div class="col-md-3 ">
+              <p>Aluno</p>
+              <ul>
+                <li><a href="login.html">Portal do aluno</a></li>
+                <!-- <li><a href="">Pós-Graduação</a></li> -->
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p>Redes Sociais</p>
+              <div class="d-flex justify-content-center">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Colocar as fotos da sessao conteudo com animaça
+          Adicionar midia queries no h1 da inscreiçao-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+body{
+    font-family:  Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article{
+    background: #e6e6e6a4;
+    
+}
+
+#conteudo p{
+    background:#0B3861;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.img-capa{
+    margin-top: 80px;
+}
+
+.inscriçao{
+    background:#CEF6F5;
+    height: 170px;
+}
+
+#form{
+    width: 150px;
+}
+
+.container h1{
+    color: rgb(0, 0, 0);
+}
+
+#container a{
+    color: white;
+    font-weight: bold;
+}
+
+.docente{
+    background:#0B3861 ;
+    color: white;
+    padding: 40px;
+}
+
+
+footer{
+    background:#045FB4;
+    padding: 30px;
+    color: white;
+    margin-top: 40px;
+    font-size: 1.2em ;
+}
+
+footer img{
+    margin-bottom: 10px;
+}
+
+footer p, a{
+    text-align: center;
+}
+
+footer li{
+    list-style: none;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+footer a:hover{
+    background: #0B3861;
+    color:#ffffff ;
+    text-decoration: none;
+}
+  
+
+
+/*-------------------------------------------*/
+ /* PAGINA LOGIN */
+
+#login{
+    background: linear-gradient( rgba(128, 128, 128, 0.726), rgba(73, 73, 253, 0.781)) no-repeat;
+    background-attachment: fixed;
+}
+
+.sessao{
+    border-radius: 10px;
+    margin-top: 200px;
+    
+}
+
+#quadro{
+    background: #bdbdbd75;
+    width: 400px;
+    height: 400px;
+}
+
+#usuario input{
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 40px;
+}
+
+input#email{
+    background-image: url(imagens/icone-usuario.png);
+}
+
+input#senha{
+    background-image: url(imagens/icone-usuario.png);
+}
+/* ---------------------------------------------------------------- */
+/* PAGINA CONTATO */
+.about{
+    padding-bottom: 20px;
+}
+
+.form{
+    background:rgba(0, 0, 255, 0.342);
+    width: 450px;
+    margin: auto;
+    box-shadow: 2px 2px 2px  rgb(3, 3, 3);
+    padding-bottom: 20px;
+}
+
+
+
+.formulario{
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 100px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.formulario input{
+    margin-bottom: 5px;
+}
+
+#footer-sobre{
+    margin-top: 0;
+}
+
+/* ---------------------- */
+/* Modal */

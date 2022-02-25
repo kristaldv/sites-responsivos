@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e1fae4bd76.js" crossorigin="anonymous"></script>
+    <script src="validaçao.js"></script>
+    <title>UNES - Contato</title>
+</head>
+<body id="body-sobre">
+    <header >
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary  ">
+            <div class="container" id="container">
+                <span class="navbar-brand"><img class="" src="imagens/logo.png" alt="unes"></span>
+                
+                <!--Menu hamburguer-->
+                <button class="navbar-toggler" data-toggle="collapse"
+                data-target="#target">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+               
+                <!--Navegação-->
+                <div class="collapse navbar-collapse" id="target">
+                  <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contato</a>
+                        </li>
+
+                    </ul>
+                    <input class="btn btn-success btn-sm" type="button" value="Area do aluno" onclick="window.location.href = 'login.html'">
+                </div>
+            </div>
+          </nav>
+    </header>
+    <article class="container about">
+        <div class="text-center ">
+            <img class="img-fluid img-capa img-thumbnail" src="imagens/capa.png" alt="">
+        </div>
+        <hr>
+        <form class="form">
+            <fieldset class="formulario">
+                <legend class="pt-3 text-center">Contate nos</legend>
+                <div>
+                    <label class="form-label" for="nome">Nome: </label>
+                    <input class="form-control " type="text" placeholder="Digite nome completo" id="nome">
+                </div>
+                <div>
+                    <label for="Email" >Email: </label>
+                    <input class="form-control " type="email" placeholder="usuario@gmail.com" id="gmail">
+                </div>
+                <div>
+                    <label for="text">Numero de contato</label>
+                    <input class="form-control " type="email" placeholder="(DDD) + numero" id="contato">
+                </div>
+                <hr>
+                <div  >
+                    <label for="text" required>Você é nosso aluno? </label>
+                    
+                    <div class="form-check form-check-inline">
+                      <label  for="sim">
+                        <input  class="form-check-input" type="checkbox" name="sim" >Sim
+                      </label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                      <label  for="nao">
+                        <input  class="form-check-input" type="checkbox" name="nao" >Não
+                      </label>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <label for="textarea">Digite sua mensagem:</label>
+                    <textarea class="form-control " name="assunto" id="mensagem" cols="10" rows="5"></textarea>
+                </div>
+                <input class="btn btn-danger mt-3" type="button" value="Enviar" onclick="enviar()">
+            </fieldset>
+        </form>
+        
+    </article>
+      <!-- Modal -->
+      <div class="modal fade" id="popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="titulo"></h5>
+            </div>
+            <div class="modal-body" id="sms">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="voltar" onclick="recarregar()"></button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+   <footer id="footer-sobre">
+        <div class="container">
+          <div class="row d-flex">
+              <div class="col-md-3">
+                  <img src="imagens/logo.png" alt="" width="150px"> <br>
+                  <p> Avenida Central, 452, Pinheiros - CEP: 40000.222, Salvador-BA</p>
+              </div>
+              <div class="col-md-3 ">
+                <p>UNES</p>
+                <ul >
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="sobre.html">Sobre</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                  
+                </ul>
+              </div>
+              <div class="col-md-3" >
+                <p>Aluno</p>
+                <ul>
+                  <li><a href="login.html">Portal do aluno</a></li>
+                  <!-- <li><a href="">Pós-Graduação</a></li> -->
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <p>Redes Sociais</p>
+                <div class="d-flex justify-content-center">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </footer> 
+      
+    
+    <!-- Colocar as fotos da sessao conteudo com animaça
+          Adicionar midia queries no h1 da inscreiçao-->
+
+
+
+    
+</body>
+</html>
