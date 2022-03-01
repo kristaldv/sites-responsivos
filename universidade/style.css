@@ -98,8 +98,9 @@ footer a:hover{
 
 #quadro{
     background: #bdbdbd75;
-    width: 400px;
-    height: 400px;
+    width: 50vh;
+    height: 50vh;
+    
 }
 
 #usuario input{
@@ -126,7 +127,7 @@ input#senha{
 
 .form{
     background:rgba(0, 0, 255, 0.342);
-    width: 450px;
+    max-width: 450px;
     margin: auto;
     box-shadow: 2px 2px 2px  rgb(3, 3, 3);
     padding-bottom: 20px;
@@ -135,9 +136,11 @@ input#senha{
 
 
 .formulario{
-    width: 400px;
+    max-width: 400px;
     margin: auto;
     margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 100px;
     font-size: 1.2em;
     font-weight: bold;
@@ -159,7 +162,7 @@ input#senha{
 }
 
 #portal-aluno{
-    width:900px;
+    max-width:900px;
     height:50vh;
     background: #ffffff69;
     border-radius: 10px;
@@ -168,9 +171,14 @@ input#senha{
 }
 
 .list {
+    max-width: 900px;
     margin: auto;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     border-bottom: 2px solid rgba(128, 0, 0, 0.603);
     justify-content: center;
+}
+.list a{
+    padding: 5px;
 }
