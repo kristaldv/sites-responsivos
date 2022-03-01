@@ -159,7 +159,7 @@ input#senha{
 }
 
 #portal-aluno{
-    width: 50%;
+    width:900px;
     height:50vh;
     background: #ffffff69;
     border-radius: 10px;
@@ -168,6 +168,7 @@ input#senha{
 }
 
 .list {
+    margin: auto;
     list-style: none;
     display: flex;
     border-bottom: 2px solid rgba(128, 0, 0, 0.603);
