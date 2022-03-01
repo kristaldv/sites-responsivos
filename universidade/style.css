@@ -152,4 +152,24 @@ input#senha{
 }
 
 /* ---------------------- */
-/* Modal */
+/* Page aluno */
+
+#background{
+    background: #b0b7be;
+}
+
+#portal-aluno{
+    width: 50%;
+    height:50vh;
+    background: #ffffff69;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px black;
+  
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    border-bottom: 2px solid rgba(128, 0, 0, 0.603);
+    justify-content: center;
+}

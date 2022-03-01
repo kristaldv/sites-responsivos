@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+  <link rel="stylesheet" href="style.css">
     <title>Portal do aluno</title>
 </head>
-<body>
+<body id="background">
   <header >
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary ">
         <div class="container" id="container">
@@ -38,12 +40,86 @@
         </div>
       </nav>
 </header>
-    <div>
-      <h1 class="displ">BEM VINDO A AREA DO ALUNO</h1>
-      <p class="display-4">Pagina ainda em desenvolvimento</p>
-      <br>
-      <input type="button" value="home" onclick="window.location= 'index.html'">
-    </div>
-      
+ <div id="portal-aluno">
+  <ul class="list p-2">
+    <li>
+      <div class="dropdown btn btn-dark ml-1">
+        <a class=" dropdown " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Geral
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Curso</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown btn btn-dark ml-1">
+        <a class=" dropdown " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Dados Acadêmicos
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Historico</a></li>
+          <hr class="dropdown-divider">
+          <li><a class="dropdown-item" href="#">Notas</a></li>
+          <hr class="dropdown-divider">
+          <li><a class="dropdown-item" href="#">Falta</a></li>
+          <hr class="dropdown-divider">
+          <li><a class="dropdown-item" href="#">Matriz curricular</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown btn btn-dark ml-1">
+        <a class=" dropdown" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Financeiro
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Negociaçao</a></li>
+          <hr class="dropdown-divider">
+          <li><a class="dropdown-item" href="#">Situaçao financeira</a></li>
+          <hr class="dropdown-divider">
+          <li><a class="dropdown-item" href="#">Extrato</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown btn btn-dark ml-1">
+        <a class=" dropdown " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Biblioteca
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Livros emprestados</a></li>
+          <hr class="dropdown-divider">
+          <li><a class="dropdown-item" href="#">Debitos</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown btn btn-dark ml-1">
+        <a class=" dropdown " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Contato
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Ouvidoria</a></li>
+          <hr class="dropdown-divider">
+          <hr class="dropdown-divider">
+          <li><a class="dropdown-item" href="#">Requerimentos</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown btn btn-dark ml-1">
+        <a class=" dropdown " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Atividades Complementares
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Horas validadas</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+    
+  </ul> 
+ </div>
 </body>
 </html>
