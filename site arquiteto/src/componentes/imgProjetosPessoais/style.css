@@ -1,0 +1,6 @@
+.img-projetos-pessoais img{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+   box-shadow: 2px 2px 2px 2px var(--color-sombras);
+}

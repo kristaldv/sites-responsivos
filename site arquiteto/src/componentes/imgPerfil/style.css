@@ -1,0 +1,16 @@
+
+.img-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.img-perfil-principal{
+    border-radius: 500%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 2px var(--color-sombras);
+    margin-top: 20px;
+}
+
