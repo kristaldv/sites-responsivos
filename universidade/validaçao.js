@@ -26,7 +26,7 @@ function enviar(){
     let contato = document.getElementById('contato').value
     let mensagem = document.getElementById('mensagem').value
 
-    if(nome == '' && gmail == '' && contato == '' && mensagem ==''){
+    if(nome == '' && gmail == '' && contato == '' && mensagem ==''){ 
         $('#popup').modal('show');
        
         let h5 = document.getElementById('titulo')
